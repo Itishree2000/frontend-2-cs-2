@@ -1,4 +1,4 @@
-// Sample student data (replace with your actual data)
+
 const students = [
     {"id":1,"first_name":"Chadwick","last_name":"Ayre","email":"cayre0@cam.ac.uk","gender":"Male","img_src":"https://robohash.org/corporisquiaperiam.png?size=50x50&set=set1","class":11,"marks":18,"passing":false,"city":"Moorreesburg"},
 {"id":2,"first_name":"Abrahan","last_name":"Seabrocke","email":"aseabrocke1@ocn.ne.jp","gender":"Male","img_src":"https://robohash.org/autiuredistinctio.png?size=50x50&set=set1","class":3,"marks":27,"passing":true,"city":"Kampong Thom"},
@@ -102,91 +102,6 @@ const students = [
 {"id":100,"first_name":"Zoe","last_name":"Moorhead","email":"zmoorhead2r@sfgate.com","gender":"Female","img_src":"https://robohash.org/fugiatcorporisdeleniti.png?size=50x50&set=set1","class":8,"marks":43,"passing":true,"city":"Makin Village"}
 ];
 
-// // Function to render the table with student data
-// function renderTable(data) {
-//     const tableBody = document.getElementById("table-body");
-//     tableBody.innerHTML = "";
-
-//     data.forEach((student) => {
-//         const row = document.createElement("tr");
-
-//         // Populate table cells with student data
-//         const idCell = createTableCell(student.id);
-//         const nameCell = createTableCell(`${student.first_name} ${student.last_name}`);
-//         const genderCell = createTableCell(student.gender);
-//         const classCell = createTableCell(student.class);
-//         const marksCell = createTableCell(student.marks);
-//         const passingCell = createTableCell(student.passing ? "Passing" : "Failed");
-//         const emailCell = createTableCell(student.email);
-
-//         row.appendChild(idCell);
-//         row.appendChild(nameCell);
-//         row.appendChild(genderCell);
-//         row.appendChild(classCell);
-//         row.appendChild(marksCell);
-//         row.appendChild(passingCell);
-//         row.appendChild(emailCell);
-
-//         tableBody.appendChild(row);
-//     });
-// }
-
-// // Helper function to create a table cell
-// function createTableCell(text) {
-//     const cell = document.createElement("td");
-//     cell.textContent = text;
-//     return cell;
-// }
-
-// // Function to perform sorting (add your sorting logic here)
-// function sortData(sortType) {
-//     switch (sortType) {
-//         case "az":
-//             students.sort((a, b) => (a.first_name + a.last_name).localeCompare(b.first_name + b.last_name));
-//             break;
-//         case "za":
-//             students.sort((a, b) => (b.first_name + b.last_name).localeCompare(a.first_name + a.last_name));
-//             break;
-//         case "marks":
-//             students.sort((a, b) => a.marks - b.marks);
-//             break;
-//         case "passing":
-//             students.sort((a, b) => (a.passing === b.passing) ? 0 : a.passing ? -1 : 1);
-//             break;
-//         case "class":
-//             students.sort((a, b) => a.class.localeCompare(b.class));
-//             break;
-//         case "gender":
-//             // Handle gender sorting here
-//             break;
-//         default:
-//             break;
-//     }
-
-//     renderTable(students);
-// }
-
-// // Function to filter data based on search input
-// function search() {
-//     const searchInput = document.getElementById("search").value.toLowerCase();
-//     const filteredStudents = students.filter((student) =>
-//         student.first_name.toLowerCase().includes(searchInput) ||
-//         student.last_name.toLowerCase().includes(searchInput) ||
-//         student.email.toLowerCase().includes(searchInput)
-//     );
-//     renderTable(filteredStudents);
-// }
-
-// // Add event listeners for sorting and searching
-// document.getElementById("sort-az").addEventListener("click", () => sortData("az"));
-// document.getElementById("sort-za").addEventListener("click", () => sortData("za"));
-// document.getElementById("sort-marks").addEventListener("click", () => sortData("marks"));
-// document.getElementById("sort-gender").addEventListener("click", () => sortData("gender"));
-// document.getElementById("sort-passing").addEventListener("click", () => sortData("passing"));
-// document.getElementById("sort-class").addEventListener("click", () => sortData("class"));
-
-// // Initialize the table with the default data
-// renderTable(students);
 
 
 
